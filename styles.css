@@ -22,17 +22,18 @@ ul.navbar li {
     border-top: 1px solid #17252a;
     border-left: 10px solid #17252a;
     border-bottom: 1px solid #17252a;
-  }
+    background-color: black;
+}
   
   ul.navbar a {
     text-decoration: none
   }
   a:link {
-    color:saddlebrown;
+    color:yellow;
   }
   
   a:visited {
-    color:saddlebrown;
+    color:goldenrod;
   }
 #num1 { color :yellow}
 #num2 { color:lightgrey}
