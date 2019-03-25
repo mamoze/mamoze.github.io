@@ -1,6 +1,6 @@
 body {
   margin-left: 225px;
-  background-color: moccasin;
+  background-color:black;
 }
 h1 {
     color: blue;
@@ -31,3 +31,5 @@ ul.navbar li {
   a:visited {
     color:saddlebrown;
   }
+#num1 { color :yellow}
+#num2 { color:lightgrey}
