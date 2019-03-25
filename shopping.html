@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="AddRemove.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<ul class="navbar">
+    <li> <a href= "index.html"> Home </a> </li>
+    <li> <a href="tasks.html"> Tasks</a> </li>
+    <li> <a href="shopping.html"> Get your outfit </a> </li>
+    <li><a href="https://www.staderochelais.com/en/teams/pro-team/top-14-fixtures">Top 14 calendar and results</a></li>
+
+</ul>
+<div class="container">
+    <form onsubmit="return false;" id="contact">
+        <h3>Get everything you need!</h3>
+
+        <input type="checkbox" id="first"><label id="num1"> Limited edition item<label/>
+        <br>
+        <input type="checkbox" id="second"><label id="num1"> Available in the fan's store</label>
+
+        <fieldset>
+            <label for="item" id="num1">Item you need :</label>
+            <input id="num1" id="item" name="item" type="text">
+            <button type="submit" onclick="addItem()">ADD</button>
+        </fieldset>
+        <fieldset>
+        </fieldset>
+        <fieldset>
+            <label id="num1">Index of element to remove :</label>
+            <input type="number" id="removeField" min="0" max="50"/></label>
+            <button type="submit" id="remove_button" onclick="removeItem()">REMOVE</button>
+        </fieldset>
+        <fieldset>
+            <ul id="emptyul"></ul>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

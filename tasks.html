@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Tasks</title>
+    <title>tasks</title>
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -10,36 +10,20 @@
 <ul class="navbar">
     <li> <a href= "index.html"> Home </a> </li>
     <li> <a href="tasks.html"> Tasks</a> </li>
-    <li> <a href="forms.html"> Shopping </a></li>
-    <li> <a href="shopping.html"> Order some food </a> </li>
-    <li> <a href="https://www.kodawari-ramen.com/"> My favorite restaurant </a> </li>
+    <li> <a href="shopping.html"> Get your outfit </a> </li>
+    <li><a href="https://www.staderochelais.com/en/teams/pro-team/top-14-fixtures">Top 14 calendar and results</a></li>
 
 </ul>
-<span>
-		Here should appear our flowers:
-<br>
-    <br>
-	</span>
-
-<div id="container">
-
-    <img id="flow0">
-    <img id="flow1">
-    <img id="flow2">
-    <img id="flow3">
-    <img id="flow4">
-</div>
-
-<div id="empty">
-
-</div>
-
 <div>
-	<span id="new_element">
-		Here should appear our flowers:
+	<span id="num1">
+		Here should appear our logo:
 	</span>
 </div>
 <br>
+<div>
+    <img src="plop1.png"/>
+    <img src="plop2.png"/>
+</div>
 <br>
 <div>
 	<span id="rainbow" style="font-size: 25px;">
@@ -53,44 +37,64 @@
 	</span>
 </div>
 <br>
-<br>
 <div id="event">
     <div>
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
+        <img src="plop1.png">
+        <img src="plop2.png">
+        <img src="plop1.png">
+        <img src="plop2.png">
+        <img src="plop1.png">
     </div>
     <div>
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
+        <img src="plop2.png">
+        <img src="plop1.png">
+        <img src="plop2.png">
+        <img src="plop1.png">
+        <img src="plop2.png">
     </div>
     <div>
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
+        <img src="plop1.png">
+        <img src="plop2.png">
+        <img src="plop1.png">
+        <img src="plop2.png">
+        <img src="plop1.png">
     </div>
     <div>
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
+        <img src="plop2.png">
+        <img src="plop1.png">
+        <img src="plop2.png">
+        <img src="plop1.png">
+        <img src="plop2.png">
     </div>
     <div>
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
-        <img src="flower1.png">
+        <img src="plop1.png">
+        <img src="plop2.png">
+        <img src="plop1.png">
+        <img src="plop2.png">
+        <img src="plop1.png">
     </div>
 </div>
-<script src="script.js"></script>
+<script>
+    let spans = document.getElementById("rainbow").children;
+    let colors = ["red", "orange","yellow","green","blue","purple","pink"];
+    for (var i = spans.length - 1; i >= 0; i--) {
+        spans[i].style.color = colors[i];
+    }
+</script>
+<script>
+    var changeSrc = function(event) {
+        if (event.target.src) {
+            let filename = event.target.src.replace(/^.*[\\\/]/, '');
+            if(filename=="plop1.png"){
+                event.target.src = "plop2.png";
+            }
+            else if(filename=="plop2.png"){
+                event.target.src = "plop1.png";
+            }
+        }
+    };
+    document.getElementById("event").addEventListener("mouseover", changeSrc);
+</script>
+</body>
 </body>
 </html>
